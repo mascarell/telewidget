@@ -25,7 +25,7 @@
 	display: none;
 	animation-duration: .5s;
 	animation-fill-mode: both;
-	animation-delay: 1s;
+	animation-delay: .5s;
 }
 
 /* Close button */
