@@ -1,0 +1,19 @@
+{
+  "name": "js-widget",
+  "scripts": {
+    "build": "./node_modules/.bin/webpack --config webpack.config.js",
+    "start": "./node_modules/.bin/webpack serve --open"
+  },
+  "devDependencies": {
+    "@babel/core": "*",
+    "@babel/preset-env": "*",
+    "babel-loader": "*",
+    "copy-webpack-plugin": "*",
+    "webpack-cli": "*",
+    "css-loader": "*",
+    "html-loader": "*",
+    "style-loader": "*",
+    "webpack": "*",
+    "webpack-dev-server": "*"
+  }
+}

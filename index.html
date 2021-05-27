@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>TeleWidget test page</title>
+</head>
+<body>
+    <script>
+        (function (w,d,s,o,f,js,fjs) {
+            w['ww']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) }
+            js = d.createElement(s), fjs = d.getElementsByTagName(s)[0]
+            js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs)
+        }(window, document, 'script', 'telewidget', 'widget.js'))
+
+      telewidget('config', { 
+        message: 'Widget example! 👍',
+        users: ['user1', 'user2'],
+        showMessageAlways: true,
+        useCookies: false,
+        useAnimations: true,
+        useDarkTheme: false,
+      })
+    </script>
+</body>
+</html>
