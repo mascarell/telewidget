@@ -14,6 +14,7 @@
 
 #### WIP
 
+* Landing page for the widget
 * WordPress plugin
 * SASS instead of the ugly and big CSS file that we currently have
 * Add picture on top of README.md
