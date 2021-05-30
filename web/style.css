@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+html{
+  background-color: #F9F8FA;
+  color: #3E5162;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.web{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column-reverse wrap;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin-bottom: 20vh;
+}
+
+.item{
+  margin-top: 20vh;
+  overflow: auto;
+}
+.item .steps{
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 28px;
+  padding: 5px;
+  box-sizing: border-box;
+  margin-bottom: 18px;
+  box-shadow: rgba(5, 10, 15, 0.03) 0px 0.3rem 1.2rem 0px;
+}
+.item a{
+  text-decoration: none;
+  font-weight: 500;
+  color: #e03be6;
+}
+.item img{
+  width: 100%;
+  max-width: 38px;
+  margin-right: 20px;
+}
+.item h1{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: black;
+}
+
+pre{
+  font-size: 14px !important;
+}
+
+.content{
+  overflow: auto;
+  width: 100%;
+}
+
+/* Tablets */
+@media only screen and (min-width : 48em){
+  .web{
+    flex-flow: row nowrap;
+  }
+
+  .content{
+    flex: 0 0 420px;
+  }
+}

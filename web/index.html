@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TeleWidget - Customer support with Telegram</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="web">
+    <div class="content">
+      <div class="item">
+        <h1><img src="assets/telegram.svg" alt="TeleWidget logo"> TeleWidget</h1>
+        <p>Telegram widget that lets your customers talk to you in your favorite messaging app. 👇</p>
+      </div>
+      
+      <div class="item">
+        <div class="steps">1</div>
+        <p>Add the code before closing your &lt;/head&gt; tag and configure the properties.</p>
+        <pre><code class="language-js">
+(function (w,d,s,o,f,js,fjs) {
+w['ww']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) }
+js = d.createElement(s), fjs = d.getElementsByTagName(s)[0]
+js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs)
+}(window, document, 'script', 'telewidget', 'https://cdn.jsdelivr.net/gh/mascarell/telewidget@latest/widget.js'))
+
+telewidget('config', {
+  message: 'Widget example! 🔥',
+  // You can put only one user in the array if you don't need multiple users to manage customer support
+  users: ['user1', 'user2'],
+  showMessageAlways: true,
+  useCookies: true,
+  useAnimations: true,
+  useDarkTheme: false,
+})
+        </code></pre>
+      </div>
+
+      <div class="item">
+        <div class="steps">2</div>
+        <p>Add multiple Telegram users so you and your team can all split customer support messages.</p>
+        <pre><code class="language-js">
+telewidget('config', {
+  users: ['user1', 'user2', 'user3', 'user4'],
+})
+        </code></pre>
+      </div>
+
+      <div class="item">
+        <div class="steps">3</div>
+        <p>That’s it, enjoy! Also, be cool and follow me on <a href="https://twitter.com/mascarelldev" target="_blank" rel="noopener noreferrer">Twitter</a>. 😉</p>
+      </div>
+
+      <div class="item">
+        <div class="steps">4</div>
+        <p>Want to improve the widget? It’s <a href="https://github.com/mascarell/telewidget" target="_blank" rel="noopener noreferrer">open source</a>!</p>
+      </div>
+
+    </div>
+
+    <div class="img"></div>
+  </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/plugins/autoloader/prism-autoloader.min.js"></script>
+</body>
+</html>
