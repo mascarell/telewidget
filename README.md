@@ -39,6 +39,7 @@ telewidget('config', {
     users: ['user1', 'user2'],
     showMessageAlways: true,
     useCookies: true,
+    floatLeft: false,
     useAnimations: true,
     useDarkTheme: false,
 })
