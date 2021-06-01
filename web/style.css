@@ -23,6 +23,9 @@ html{
   margin-top: 20vh;
   overflow: auto;
 }
+.item:first-child{
+  margin-top: 0;
+}
 .item .steps{
   width: 45px;
   height: 45px;
@@ -64,6 +67,16 @@ pre{
   width: 100%;
 }
 
+.img{
+  position: relative;
+}
+.img img{
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  /* box-shadow: rgba(5, 10, 15, 0.03) 0px 0.3rem 1.2rem 0px; */
+}
+
 /* Tablets */
 @media only screen and (min-width : 48em){
   .web{
@@ -72,5 +85,24 @@ pre{
 
   .content{
     flex: 0 0 420px;
+  }
+  .item:first-child{
+    margin-top: 20vh;
+  }
+
+  .img{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 20vh;
+    position: relative;
+  }
+  .img img{
+    position: sticky;
+    transition: .2s linear;
+    top: 50px;
+    max-width: 75%;
+    height: auto;
+    align-self: flex-start;
   }
 }
